@@ -1,0 +1,181 @@
+.icon-blue {
+  color: var(--blue);
+}
+
+.icon-green {
+  color: var(--green);
+}
+
+.icon-orange {
+  color: var(--orange);
+}
+
+.icon-red {
+  color: var(--red);
+}
+
+.card-content {
+  background-color: var(--main-color);
+  height: 35.5vh;
+  width: 100%;
+}
+
+.card-content_x {
+  background-color: var(--main-color);
+  height: 37vh;
+  width: 100%;
+}
+
+.card-content--average-duration {
+  background-color: var(--main-color);
+  color: black;
+  height: 80%;
+  border-style: none;
+  width: 11rem;
+}
+
+.card-content--parent {
+  background-color: var(--main-color);
+  height: 100%;
+}
+
+.card-content--width {
+  background-color: var(--main-color);
+  width: 100%;
+}
+
+.card-content--color {
+  font-size: 14px;
+  color: var(--text-color)
+}
+
+.card-content__value {
+  color: #28c76f;
+  background-color: #28c76f40;
+  font-size: 13px;
+}
+
+.card-content__value_duration {
+  color: var(--text-color);
+  /* background-color: #28c76f40; */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title-color {
+  color: var(--text-color);
+}
+
+.color {
+  color: var(--text-color);
+}
+
+.icon {
+  background: var(--tosca-light);
+  border-radius: '5px';
+  height: 30px;
+  width: 30px;
+}
+
+.icon-agent-activity {
+  background: var(--tosca-light);
+  border-radius: '5px';
+  height: 30px;
+  width: 30px;
+}
+
+.icon-call-activity {
+  color: var(--tosca);
+}
+
+.card-content-icon {
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.service-level__legend {
+  height: 3.60rem;
+  transform: translate(0%, 600%);
+  position: absolute;
+}
+
+.service-level__legend__desc {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.call-percentage {
+  width: 100%;
+}
+
+.call-percentage__info {
+  height: 50%;
+  line-height: 10px;
+  padding-bottom: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-chart {
+  color: var(--text-color);
+  font-size: 17px;
+}
+
+.chart-icon {
+  position: absolute;
+  transform: translate(2.1rem, -3.5rem);
+}
+
+.chart-icon--phone {
+  position: absolute;
+  transform: translate(2.3rem, -3.5rem);
+}
+
+.chart-icon__phone {
+  font-size: 18px;
+  color: var(--orange);
+}
+
+.chart-icon__x {
+  font-size: 23px;
+  color: var(--red);
+}
+
+.call-percentage__line--answered {
+  width: 60%;
+  margin-top: 0px;
+  height: 2px;
+  background: var(--orange);
+  border-radius: 20px;
+}
+
+.call-percentage__info-title {
+  color: var(--text-monitoring);
+  font-size: 14px;
+}
+
+.call-percentage__info-value {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.call-percentage__line--abandoned {
+  width: 60%;
+  margin-top: 10px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 20px;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

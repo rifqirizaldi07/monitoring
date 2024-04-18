@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale !important;
+  background-color: #ffffff !important;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --icon-color: #525252;
+  --main-color: rgb(255, 255, 255);
+  --text-color: #525252;
+  --background-color: #f8f7fa;
+  --hover-color: rgba(142, 149, 180, 0.25);
+  --blue: #5199cd;
+  --blue-light: #7267f02a;
+  --blue-light-darker: #8a81f157;
+  --red: #ea5455;
+  --red-light: #ea54542a;
+  --green: #28c76f;
+  --green-light: #28c76f2a;
+  --orange: #ff9f43;
+  --orange-light: #ff9e432a;
+  --tosca: #00cfe8;
+  --tosca-light: #00d1e82a;
+  --text-monitoring: #818181;
+  --exosphere: #2f72c3;
+  --exosphere-light: #2f72c32a;
+  --text-message: #818181;
+  --conversation-color: rgb(226, 226, 226);
+  --purple: #7367f0;
+  --lightgreen: #dff7e9;
+  --lightred: #fce5e6;
+  --lightorange: #fff1e3;
+  --lightpurple: #eae8fd;
+  --tosca-light: #00d1e82f;
+  --striped-color: #fbfbfc;
+  --form-color: #c6cdcf;
+  --tooltip: rgb(55, 57, 80);
+  --tooltip-text: white;
+}
+
+.g-bx-shadow {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, .03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, .03), 0 0.25rem 0.53125rem rgba(4, 9, 20, .05), 0 0.125rem 0.1875rem rgba(4, 9, 20, .03);
+}
+
+.g-bdr-round {
+  border-radius: 5px;
+}
+
+.g-list-none {
+  list-style: none;
+}
+
+.item {
+  grid-row: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bg-blue {
+  background-color: #7367f052;
+}
+
+.bg-green {
+  background-color: #28c76f40;
+}
+
+.bg-red {
+  background-color: #ea545536;
+}
+
+.bg-yellow {
+  background-color: rgba(196, 166, 30, 0.267);
+}
+
+.bg {
+  color: #d5e0ff49;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(1, 100%);
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(1, 34%);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.grid-2s {
+  display: grid;
+  grid-template-columns: 60.4% 40%;
+  grid-template-rows: repeat(1, 100%);
+  max-height: 100%;
+  grid-column-gap: 10px;
+  overflow: hidden;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 24% 40% 36%;
+  max-height: 100%;
+  padding-left: 12px;
+  grid-gap: 10px;
+}
+
+.grid-3s {
+  display: grid;
+  grid-template-columns: 28% 32.3% 38.3%;
+  max-height: 100%;
+  padding-left: 12px;
+  grid-gap: 10px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: 35.8% 36% 31%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  grid-gap: 10px;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  grid-template-rows: repeat(1, 100%);
+  max-height: 100%;
+  grid-column-gap: 10px;
+  overflow: hidden;
+}
+
+.grid-6s {
+  display: grid;
+  grid-template-columns: 55.6% 44.4%;
+  grid-template-rows: repeat(1, 100%);
+  max-height: 100%;
+  grid-column-gap: 10px;
+  overflow: hidden;
+}
+
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(1, 100%);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.grid-8 {
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
