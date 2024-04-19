@@ -6,6 +6,20 @@ import "../style.css"
 
 export default function AverageDuration() {
   const { dataAvgDuration } = useContext(SocketContext)
+ 
+//   const fixDuration = (stat) => {
+//     if(stat === 'abandoned'){
+//         let total = (dataAvgDuration.answer_rate + dataAvgDuration.abandone_rate)
+//         const value = (dataAvgDuration.abandone_rate / total) * 100
+//         return value.toFixed(0)
+
+//     }
+//     if(stat === 'answered'){
+//         let total = (dataAvgDuration.abandone_rate + dataAvgDuration.answer_rate)
+//         const value = (dataAvgDuration.answer_rate / total) * 100
+//         return value.toFixed(0)
+//     }
+// }
 
   const cardContent = (value = null, name = '', icon = '', background = '', color = '') => {
     return (

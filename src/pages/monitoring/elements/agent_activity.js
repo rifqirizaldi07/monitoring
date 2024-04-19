@@ -38,7 +38,7 @@ export default function AgentActivity() {
         {cardAgentActivity('Online Out', dataAgentActivity.online_out, 'bx bx-globe')}
         {cardAgentActivity('ACW', dataAgentActivity.acw, 'bx bx-spreadsheet')}
         {cardAgentActivity('Paperwork', dataAgentActivity.paperwork, 'bx bx-file-blank')}
-        {cardAgentActivity('Login', dataAgentActivity.login, 'bx bx-log-in')}
+        {cardAgentActivity('Login', dataAgentActivity.login_count, 'bx bx-log-in')}
       </div>
     </div>
   )

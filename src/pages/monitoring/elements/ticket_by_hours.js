@@ -6,6 +6,7 @@ import "../style.css"
 
 export default function TicketByHours() {
   const { dataTicketHour } = useContext(SocketContext)
+  console.log(dataTicketHour)
   const [ticketData, setTicketData] = useState([])
 
   useEffect(() => {

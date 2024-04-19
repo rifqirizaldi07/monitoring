@@ -6,8 +6,9 @@ import "../style.css"
 
 export default function CallActivity() {
   const { dataCallsActivity } = useContext(SocketContext)
+  console.log(dataCallsActivity)
   const categories = [
-    'IVR', 'Queue', 'Agent', 'Voicemail'
+    'IVR', 'Queue', 'Agent', 'Transfer', 'Voicemail'
   ];
 
   const bar = {
@@ -15,7 +16,7 @@ export default function CallActivity() {
       type: 'column',
       backgroundColor: "transparent",
       height: 160,
-      width: 240,
+      width: 300,
     },
     title: {
       text: '',
@@ -90,7 +91,8 @@ export default function CallActivity() {
         dataCallsActivity.abandone_ivr,
         dataCallsActivity.abandone_queue,
         dataCallsActivity.abandone_agent,
-        // dataCallsActivity.abandone_voicemail,
+        dataCallsActivity.abandone_transfer,
+        dataCallsActivity.voice_mail,
       ]
     },]
   }
@@ -119,7 +121,7 @@ export default function CallActivity() {
     <div className='card-content pt-4 g-bdr-round d-flex justify-content-center px-2 flex-column'>
       <h5 className='title-chart px-3'>Call Activity</h5>
       <div className="g-bdr-round d-flex flex-row">
-        <div className='px-3 pl-0' style={{ width: '50%' }}>
+        <div className='px-3 pl-0' style={{ width: '47%' }}>
           <ul className='pl-0 d-flex flex-column g-list-none'>
             <li> {cardAgentActivity('IVR', dataCallsActivity.ivr_call, 'bx bx-phone-incoming')}</li>
             <li> {cardAgentActivity('Queue', dataCallsActivity.queue_call, 'bx bx-bot')}</li>
@@ -127,7 +129,7 @@ export default function CallActivity() {
             <li> {cardAgentActivity('Answered', dataCallsActivity.answer_call, 'bx bx-list-ol')}</li>
           </ul>
         </div>
-        <div className='d-flex flex-column align-items-center' style={{ width: '49.5%' }}>
+        <div className='d-flex flex-column align-items-center' style={{ width: '49%' }}>
           <h6 className="text-center">Abandoned</h6>
           <div className="row d-flex align-items-center  ">
             <HighchartsReact
