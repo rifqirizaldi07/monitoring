@@ -90,12 +90,12 @@ export default function TicketByHours() {
         // marker: {
         //   enabled: false
         // },
-        color: '#32CD32',
+        color: '#2f72c3',
         fillColor: {
           linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
           stops: [
-            [0, '#32CD32'],
-            [1, '#32CD3200']
+            [0, '#2f72c3'],
+            [1, '#d5e0ff']
           ]
         },
         threshold: null,
@@ -139,7 +139,7 @@ export default function TicketByHours() {
   }
 
   return (
-    <div className="ticket card-content--width">
+    <div className="ticket card-content--width pt-3" style={{paddingTop: '-10px'}}>
         <HighchartsReact
           highcharts={Highcharts}
           options={barcharts}

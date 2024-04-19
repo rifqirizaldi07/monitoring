@@ -4,3 +4,8 @@
   align-items: center;
   height: 100vh; /* Optional: adjust the height to your preference */
 }
+
+.centered_content {
+  display: flex;
+  justify-content: center;
+}

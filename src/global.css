@@ -128,7 +128,7 @@ body {
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(1, 100%);
-  grid-template-rows: 35.8% 36% 31%;
+  grid-template-rows: 36% 36% 31%;
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;

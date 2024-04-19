@@ -12,7 +12,7 @@ export default function AgentActivity() {
           <div className='d-flex justify-content-between w-100 align-items-center'>
             <div className='d-flex align-items-center px-1 justify-content-center'>
               <div className='d-flex justify-content-center align-items-center' style={{ width: '0px', marginRight: '12px' }}>
-                <i className={`${icon}`} style={{ color: '#7367f0' }}></i>
+                <i className={`${icon}`} style={{ color: '#2f72c3' }}></i>
               </div>
               <div className="card-content--color h-100">{title} </div>
             </div>

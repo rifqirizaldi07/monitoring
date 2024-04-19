@@ -23,7 +23,7 @@ export default function TicketByMedia() {
       chart: {
         backgroundColor: "transparent",
         type: "column",
-        width: 550,
+        width: 568,
         height: 200,
       },
       credits: {
@@ -87,7 +87,7 @@ export default function TicketByMedia() {
   }, [dataTicketByMedia])
 
   return (
-    <div className='card-content_x pt-2 g-bdr-round d-flex justify-content-center px-2 flex-column'>
+    <div className='card-content_x pt-2 g-bdr-round d-flex justify-content-center align-items px-2 flex-column'>
       <h5 className='title-chart ml-3'>Ticket By Media</h5>
       <div className='chart-container'>
         <HighchartsReact
