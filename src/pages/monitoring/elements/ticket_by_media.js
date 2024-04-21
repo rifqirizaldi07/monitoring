@@ -86,9 +86,9 @@ export default function TicketByMedia() {
           color: '#525252',
         },
         symbolRadius: 7,
-        symbolHeight: 14,
-        symbolWidth: 14,
-        symbolPadding: 5,
+        symbolHeight: 10,
+        symbolWidth: 10,
+        symbolPadding: 7,
         squareSymbol: false,
         symbolColor: '#525252',
         title: {
