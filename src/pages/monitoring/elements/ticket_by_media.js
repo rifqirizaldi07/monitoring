@@ -11,20 +11,22 @@ export default function TicketByMedia() {
   useEffect(() => {
     // Format data for Highcharts
     const formattedData = Object.keys(dataTicketByMedia).map(mediaType => ({
-      name: mediaType,
+      name: mediaType.replace(/_/g, ' '),
       data: [
         dataTicketByMedia[mediaType].total,
         dataTicketByMedia[mediaType].work_in_progress,
         dataTicketByMedia[mediaType].done
       ]
     }))
-    // Define chart options
-    const options = {
+
+     // Define chart options
+     const options = {
       chart: {
         backgroundColor: "transparent",
         type: "column",
         width: 568,
-        height: 180,
+        height: 190,
+        margin: [10, 40, 70, 40] // [top, right, bottom, left]
       },
       credits: {
         enabled: false
@@ -45,7 +47,7 @@ export default function TicketByMedia() {
         },
         lineColor: 'transparent', 
         lineWidth: 0,
-    },
+      },
       yAxis: {
         visible: false,
         pointPadding: 40,
@@ -59,15 +61,11 @@ export default function TicketByMedia() {
       },
       plotOptions: {
         column: {
-            pointPadding: 20,
+            pointPadding: 0.1,
             borderWidth: 0,
             allowPointSelect: true,
-            pointWidth: 15,
             borderRadius:8,
             cursor: 'pointer',
-            style: {
-                borderRadius:'20px',
-            },
             dataLabels: {
                 enabled: true,
                 lineWidth:0,
@@ -76,11 +74,28 @@ export default function TicketByMedia() {
                 }
             }
         },
-        series: {
-          showInLegend: false // Hide the legend for all series
-        }
-    },
-      series: formattedData
+      },
+      legend: {
+        enabled: true, 
+        align: 'center', 
+        itemDistance: 2,
+        itemStyle: {
+          color: '#525252',
+        },
+        itemHoverStyle: {
+          color: '#525252',
+        },
+        symbolRadius: 7,
+        symbolHeight: 14,
+        symbolWidth: 14,
+        symbolPadding: 5,
+        squareSymbol: false,
+        symbolColor: '#525252',
+        title: {
+          text: null,
+        },
+      },
+      series:formattedData
     }
 
     setChartOptions(options)

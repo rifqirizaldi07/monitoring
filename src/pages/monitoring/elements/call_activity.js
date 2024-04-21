@@ -6,7 +6,7 @@ import "../style.css"
 
 export default function CallActivity() {
   const { dataCallsActivity } = useContext(SocketContext)
-  console.log(dataCallsActivity)
+
   const categories = [
     'IVR', 'Queue', 'Agent', 'Transfer', 'Voicemail'
   ];
