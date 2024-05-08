@@ -30,7 +30,7 @@ export default function AgentActivity() {
         {cardAgentActivity('Ready In', dataAgentActivity.ready_in, 'bx bx-log-in-circle')}
         {cardAgentActivity('Ready Out', dataAgentActivity.ready_out, 'bx bx-log-out-circle')}
         {cardAgentActivity('ReadyMedia', dataAgentActivity.ready_media, 'bx bx-chat')}
-        {cardAgentActivity('Break', dataAgentActivity.break, 'bx bx-coffee')}
+        {cardAgentActivity('Break', dataAgentActivity.break_user, 'bx bx-coffee')}
         {cardAgentActivity('N/A', dataAgentActivity.not_available, 'bx bx-window-close')}
       </div>
       <div className='grid-7' style={{ height: 'fit-content' }}>
