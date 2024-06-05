@@ -1,5 +1,6 @@
 import { useState, useEffect, createContext } from "react";
 import io from 'socket.io-client';
+import { isDomainAddress } from "./../utils/general";
 export const SocketContext = createContext()
 
 export const SocketProvider = (props) => {
@@ -28,7 +29,7 @@ export const SocketProvider = (props) => {
   }
 
   const socketConnect = () => {
-    const socketUrl = process.env.REACT_APP_API_URL
+    const socketUrl = isDomainAddress(window.location.hostname) ? process.env.REACT_APP_SOCKET_URL_1 : process.env.REACT_APP_SOCKET_URL_2
     const socket = io(socketUrl, {
       transports: ['polling'],
       reconnection: true,
